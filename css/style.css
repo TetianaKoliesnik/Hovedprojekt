@@ -3,56 +3,73 @@ html {
 	background-color: #dedbd2;
 }
 
+.sticky-element {
+	position: sticky;
+	top: 0;
+	background-color: blueviolet;
+}
 
-.container{
-	width: 700px;
-	height: 700px;
+.scroll {
+	overflow: auto;
+  }
+
+.container {
+	width: 80%;
+	height: 60%;
 	border: 2px solid black;
 	margin-bottom: var(--spacing-medium);
 }
 
-.container-small{
+.container-small {
 	width: 100px;
 	height: 100px;
 	margin-bottom: var(--spacing-medium);
 }
 
-.logo{
-	width: 50px;
-	height: 50px;
+.widget {
+	width: 100px;
+	height: 100px;
 	border-radius: 50%;
 }
 
-.container-for-nav{
+.logo {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.container-for-nav {
 	display: flex;
 	justify-content: center;
 	margin-bottom: var(--spacing-medium);
 	border: 2px solid black;
-	
+
 }
 
-.navigation-bar{
+.navigation-bar {
 	width: 70%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.sidebar{
+.sidebar {
 	border: 2px solid black;
-	width: 10vw;
+	width: 100px;
+	height: 100%;
 }
 
-.site-screenshot{
-	border-radius: 15px; 
+.site-screenshot {
+	border-radius: 15px;
 	margin-bottom: var(--spacing-small);
 }
 
 .site-screenshot:hover {
-	transform: scale(1.05); 
-	transition: transform 0.3s; /* for smoother scaling */
+	transform: scale(1.05);
+	transition: transform 0.3s;
+	/* for smoother scaling */
 	box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.2);
-  }
+}
 
 @media screen and (min-width: 1920px) {
 	body {
