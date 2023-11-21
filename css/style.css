@@ -59,17 +59,22 @@ html {
 	height: 100%;
 }
 
-.site-screenshot {
-	border-radius: 15px;
-	margin-bottom: var(--spacing-small);
+.page-section{
+	display: flex;
+
+}
+.section-picture{
+width: auto;
 }
 
-.site-screenshot:hover {
-	transform: scale(1.05);
-	transition: transform 0.3s;
-	/* for smoother scaling */
-	box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.2);
+.text-section{
+	width: auto;
 }
+
+.post-text{
+
+}
+
 
 @media screen and (min-width: 1920px) {
 	body {
