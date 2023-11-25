@@ -5,26 +5,13 @@ html {
 
 .sticky-element {
 	position: sticky;
-	top: 0;
-	background-color: blueviolet;
+	top: 0;;
 }
 
 .scroll {
 	overflow: auto;
   }
 
-.container {
-	width: 80%;
-	height: 60%;
-	border: 2px solid black;
-	margin-bottom: var(--spacing-medium);
-}
-
-.container-small {
-	width: 100px;
-	height: 100px;
-	margin-bottom: var(--spacing-medium);
-}
 
 .widget {
 	width: 100px;
@@ -41,7 +28,7 @@ html {
 .container-for-nav {
 	display: flex;
 	justify-content: center;
-	margin-bottom: var(--spacing-medium);
+	margin-bottom: var(--spacing-small);
 	border: 2px solid black;
 
 }
@@ -54,26 +41,15 @@ html {
 }
 
 .sidebar {
-	border: 2px solid black;
-	width: 100px;
+	background-color: beige;
 	height: 100%;
 }
 
-.page-section{
-	display: flex;
-
-}
-.section-picture{
-width: auto;
+.filter-button{
+	font-size: var(--font-size-base);
+	margin-bottom: var(--font-leading-base);
 }
 
-.text-section{
-	width: auto;
-}
-
-.post-text{
-
-}
 
 
 @media screen and (min-width: 1920px) {
