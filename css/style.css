@@ -12,6 +12,12 @@ html {
 	overflow: auto;
   }
 
+  .section-title{
+	margin-bottom: var(--font-leading-medium);
+  }
+.section-content-text{
+	margin-bottom: var(--font-leading-small);
+}
 
 .widget {
 	width: 100px;
