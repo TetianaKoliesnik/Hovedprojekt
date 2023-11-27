@@ -5,38 +5,31 @@
 	<title>Hiking</title>
 
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/variables.css">
 	<link rel="stylesheet" href="css/grid.css">
-	<link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
-	<div class="grid sticky-element">
-		<div class="column--1 offset--1">
-			<div class="clock-widget">
-				<img class="widget" src="accets\binaryClock.jpg" alt="binary clock-widget">
-			</div>
-		</div>
-
+	<nav class="grid sticky-element">
+		<img class="logo" src="accets\logo.png" alt="Explicit picture description">
 		<div class="column--9 offset--2">
 			<div class="container-for-nav">
 				<nav class="navigation-bar">
-					<div class="container-small">
-						<img class="logo" src="accets\logo.png" alt="geometric logo">
-					</div>
 					<a href="about.html">About</a>
 					<a href="contacts.html">Contact</a>
 					<a href="login.html">Login</a>
 				</nav>
 			</div>
 		</div>
-	</div>
+	</nav>
 
 
 	<div class="main-wrapper grid">
 
 
-		<aside class="sidebar column--1 offset--1">
+		<aside class="sidebar column--1 offset--5">
 			<button class="filter-button" data-filter-by="Gear-reviews">Gear Reviews</button>
 			<button class="filter-button" data-filter-by="Tips">Tips</button>
 			<button class="filter-button" data-filter-by="Photography">Photography</button>
@@ -47,14 +40,14 @@
 		</aside>
 
 		<div class="main-content scroll column--9 offset--2">
-			<section class="page-section">
+			<section class="page-section" data-type="Gear-reviews">
 				<div class="grid">
 					<div class="column--6">
 						<img class="section-picture" src="accets\photos\GearReviev\tom-briskey-Je9gqG1FqYk-unsplash.jpg"
 							alt="Explicit picture description">
 					</div>
 
-					<div class="column--6">
+					<div class="text-part column--6">
 						<p class="section-title"> Adventure Backpack Review</p>
 						<div class="text text--visible" data-component-name="text">
 							<div class="content-state">
@@ -63,9 +56,8 @@
 									Backpack real quick. This thing is a game-changer. The build is solid; it feels like
 									it could take on anything, thanks to the tough nylon and comfy straps. Surprisingly
 									roomy inside – I managed to fit all my essentials with room to spare.
-								</div>
-								<div class="content-state__variant">
-									<div class="expanded__text">
+									<div class="content-state__variant">
+
 										<div class="text__content">Pockets are strategically placed, making it easy to
 											find what you need. Hydration is a breeze with a setup that just makes
 											sense. The best part? It adapts like a champ. Tighten it up for a quick day
@@ -76,8 +68,8 @@
 											Definitely worth checking out!
 										</div>
 										<button class="button__toggle">Read More</button>
-
-									</div>
+								</div>
+								
 								</div>
 							</div>
 						</div>
@@ -87,7 +79,7 @@
 			</section>
 
 
-			<section class="page-section">
+			<section class="page-section" data-type="Personal">
 				<div class="grid">
 					<div class="column--6">
 						<p class="section-title"> Hiking Bliss and Tea Vibes! </p>
@@ -115,7 +107,7 @@
 
 
 
-			<section class="page-section">
+			<section class="page-section" data-type="Wildlife">
 				<div class="grid">
 					<div class="column--6">
 						<img class="section-picture"
@@ -138,7 +130,7 @@
 			</section>
 
 
-			<section class="page-section">
+			<section class="page-section" data-type="Personal">
 				<div class="grid">
 					<div class="column--6">
 						<p class="section-title">Welcoming Autumn's Practical Joys</p>
@@ -171,7 +163,6 @@
 							</div>
 						</div>
 					</div>
-
 					<div class="column--6">
 						<img class="section-picture"
 							src="accets\photos\Photography\andrey-savelev-Q6NgmulLKXs-unsplash.jpg"
@@ -180,13 +171,119 @@
 				</div>
 			</section>
 
+			<section class="page-section" data-type="Photography, daytrips">
+				<div class="grid">
+					<div class="column--12">
+						<p class="section-title"> Autumn photos</p>
+						<img class="section-picture"
+							src="accets\photos\Photography\andrew-coelho-aL7SA1ASVdQ-unsplash.jpg"
+							alt="Explicit picture description">
+					</div>
+				</div>
+			</section>
+
+			<section class="page-section" data-type="Foraging">
+				<div class="grid">
+					<div class="column--6">
+						<img class="section-picture" src="accets\photos\Foraging\annie-spratt--xa-wN48fWo-unsplash.jpg"
+							alt="Explicit picture description">
+					</div>
+
+					<div class="column--6">
+						<p class="section-title">Mushroom Season</p>
+						<div class="section-content">
+							<p class="section-content-text">Spent some time in the nearby forest today and came across a
+								fascinating collection of mushrooms. Their variety and uniqueness caught my eye.
+								Nature's diversity is truly astounding. It's incredible how something as simple as a
+								walk in the woods can lead to unexpected discoveries. Looking forward to exploring
+								further and uncovering more of nature's mysteries.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
 
 
+			<section class="page-section" data-type="Tips, foraging">
+				<div class="grid">
+					<div class="column--6">
+						<p class="section-title">Tips on finding mushrooms</p>
+						<div class="section-content">
+							<p class="section-content-text">
 
 
-			<img class="site-screenshot" src="assets\siteinspire1.jpg">
-			<!-- if this line is deleted scrolling feature disappears -->
+							<p class="tips"> Start with the Basics:</p> Begin your mushroom foraging journey by learning
+							about a few easily identifiable edible mushrooms, like chanterelles or morel mushrooms.
+							Familiarize yourself with these species before branching out to more complex varieties.
 
+							<p class="tips">Location Matters:</p> Focus your search on diverse habitats, such as wooded
+							areas, meadows, and near water sources. Different mushrooms thrive in different
+							environments, so be adaptable in your exploration.
+
+							<p class="tips">Pay Attention to Detail:</p> Take note of the mushroom's size, color, shape,
+							and the environment in which you find it. These details are essential for accurate
+							identification.
+
+							<p class="tips">Safety First:</p> Never consume a mushroom unless you are absolutely certain
+							of its edibility. When in doubt, consult with an experienced mycologist or a trusted field
+							guide. Toxic mushrooms can be deadly, so exercise caution.
+
+							<p class="tips">Leave No Trace:</p> Practice responsible foraging by leaving the environment
+							as you found it. Avoid damaging the ecosystem or taking more than your fair share of
+							mushrooms. Sustainable foraging ensures the preservation of this valuable resource for
+							future generations.
+
+							</p>
+						</div>
+						</p>
+					</div>
+
+					<div class="column--6">
+						<img class="section-picture" src="accets\photos\Foraging\clare-PPTHEOUPzwY-unsplash.jpg"
+							alt="Explicit picture description">
+					</div>
+				</div>
+			</section>
+
+			<section class="page-section" data-type="Gear-reviews">
+				<div class="grid">
+					<div class="column--6">
+						<img class="section-picture"
+							src="accets\photos\GearReviev\triston-dunn-gDElF4RMYbY-unsplash.jpg"
+							alt="Explicit picture description">
+					</div>
+
+					<div class="column--6">
+						<p class="section-title">Got myself a new tent</p>
+						<div class="section-content">s
+							<p class="section-content-text">
+								Recently had the chance to test out the XYZ Expedition Tent on a camping trip, and I'm
+								quite impressed. Here are the highlights:
+
+								Setup Ease: Setting up this tent was a breeze, even for someone like me who isn't a
+								seasoned camper. The color-coded poles and intuitive design made it a quick and
+								hassle-free process.
+
+								Spacious Interior: Surprisingly roomy for a two-person tent. The extra headroom was a
+								welcome surprise, and I had no problem sitting up comfortably.
+
+								Durability: Held up exceptionally well against some unexpected rain and wind. The
+								waterproof rainfly and sturdy zippers kept me dry throughout the night.
+
+								Ventilation: The well-placed vents kept condensation to a minimum, ensuring a
+								comfortable sleep even in slightly humid conditions.
+
+								Portability: Packing it back into the carry bag was straightforward, and it didn't take
+								up too much space in my backpack.
+
+								Overall, the XYZ Expedition Tent is a reliable choice for camping adventures. It strikes
+								a good balance between ease of use, durability, and comfort, making it a solid
+								investment for both beginners and seasoned campers.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
 	</div>
 
