@@ -5,17 +5,24 @@ html {
 
 .sticky-element {
 	position: sticky;
-	top: 0;;
+	top: 0;
+	;
 }
 
 .scroll {
 	overflow: auto;
-  }
+}
 
-  .section-title{
+section{
 	margin-bottom: var(--font-leading-medium);
-  }
-.section-content-text{
+}
+
+.section-title {
+	margin-bottom: var(--font-leading-medium);
+	background-color: red;
+}
+
+.section-content-text {
 	margin-bottom: var(--font-leading-small);
 }
 
@@ -51,10 +58,25 @@ html {
 	height: 100%;
 }
 
-.filter-button{
+.filter-button {
 	font-size: var(--font-size-base);
 	margin-bottom: var(--font-leading-base);
 }
+
+
+.read-more-button {
+	cursor: pointer;
+}
+
+.text__content {
+	display: none;
+	padding: 30px;
+}
+.text--expanded .text__content {
+	display: block;
+}
+
+
 
 
 
