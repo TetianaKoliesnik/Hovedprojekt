@@ -9,4 +9,10 @@ html {
 	--font-leading-medium: var(--font-size-medium);
 	--font-leading-large: var(--font-size-large);
 
+	--color-primary: #F0EAD2;
+	--color-secondary: #DDE5B6;
+	--color-tetriary: #ADC178;
+	--color-quaternary: #A98467;
+	--color-quinary: #6C584C;
+
 }
