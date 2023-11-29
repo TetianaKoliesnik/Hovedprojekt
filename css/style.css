@@ -6,16 +6,10 @@ html {
 
 .container-for-nav {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	padding: var(--font-leading-base);
-	border: 2px solid black;
 	margin-bottom: var(--font-leading-base);
 
-}
-
-.filter-button{
- background-color: var(--color-tetriary);
- padding: var(--font-leading-small);
 }
 
 .navigation-bar {
@@ -31,6 +25,13 @@ aside {
 	flex-direction: column;
 }
 
+.filter-button {
+	background-color: var(--color-tetriary);
+	font-size: var(--font-size-small);
+	margin-bottom: var(--font-leading-small);
+	cursor: pointer;
+}
+
 section {
 	margin-bottom: var(--font-leading-medium);
 }
@@ -39,9 +40,6 @@ section {
 	padding: 10px;
 }
 
-.section-picture {
-	float: left;
-}
 
 .section-title {
 	text-align: center;
@@ -66,20 +64,6 @@ section {
 }
 
 
-
-/* aside{
-	position: ;
-} */
-/* .sidebar {
-	height: 100%;
-} */
-
-.filter-button {
-	font-size: var(--font-size-small);
-	margin-bottom: var(--font-leading-base);
-	cursor: pointer;
-}
-
 .read-more-button {
 	cursor: pointer;
 }
@@ -92,6 +76,9 @@ section {
 .text--expanded .text__content {
 	display: block;
 }
+
+
+
 
 
 @media screen and (max-width: 1020px) {
