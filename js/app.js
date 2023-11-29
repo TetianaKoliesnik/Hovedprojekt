@@ -13,7 +13,7 @@ moreText.forEach(text => {
 	textToggle.addEventListener('click', displayExpandedContent);
 })
 
-/* code below filters and shows content depending which tags button is clicked on */
+/* code below filters and shows content depending which filter-button is clicked on */
 
 const filterButtons = document.querySelectorAll('.filter-button'); //select all filter buttons
 const listItems = document.querySelectorAll('.page-section'); //select all items that can be filtered
@@ -40,6 +40,6 @@ const filterList = (event) => {
 	});
 }
 
-filterButtons.forEach(filterButton => {
+filterButtons.forEach(filterButton => {			//add eventlistener to every filter-button, and execute the function when button is clicked
 	filterButton.addEventListener('click', filterList);
 });
