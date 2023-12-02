@@ -1,5 +1,5 @@
 html {
-	font-size: var(--font-size-base);
+	
 	background-color: var(--color-primary);
 	padding: 30px;
 }
@@ -32,24 +32,32 @@ aside {
 	cursor: pointer;
 }
 
-section {
+.page-section {
+	display: flex;
+	flex-direction: row;
 	margin-bottom: var(--font-leading-medium);
+
 }
 
-.text-part {
-	padding: 10px;
+image-container {
+	max-width: 50%;
 }
-
 
 .section-title {
 	text-align: center;
 	margin-bottom: var(--font-leading-medium);
-	background-color: red;
+	background-color: var(--color-quaternary);
+	font-size: var(--font-size-base);
 }
 
 .section-content-text {
 	margin-bottom: var(--font-leading-small);
 }
+
+.text-part {
+	/* padding: 10px; */
+}
+
 
 .tips {
 	margin-top: 10px;
@@ -64,16 +72,19 @@ section {
 }
 
 
-.read-more-button {
+.button__toggle {
 	cursor: pointer;
+	background-color: var(--color-tetriary);
+	font-size: var(--font-size-small);
+	padding: var(--font-leading-small);
 }
 
-.text__content {
+.text__content {   /* hide text until button read more is clicked */
 	display: none;
 	padding: 30px;
 }
 
-.text--expanded .text__content {
+.text--expanded .text__content {  /* show text when button is clicked */
 	display: block;
 }
 
@@ -83,14 +94,14 @@ section {
 
 @media screen and (max-width: 1020px) {
 	body {
-		max-width: 900px;
+		max-width: 80vw;
 		margin: 0 auto;
 	}
 
 	aside {
 		position: fixed;
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		max-height: 30px;
 		font-size: var(--font-size-small);
 	}
@@ -99,5 +110,9 @@ section {
 		display: none;
 	}
 
+	.page-section {
+		display: flex;
+		flex-direction: column;
+	}
 
 }
