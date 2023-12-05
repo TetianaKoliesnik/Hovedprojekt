@@ -74,12 +74,13 @@ aside {
 .text__content {
 	/* hide text until button read more is clicked */
 	display: none;
-	padding: 30px;
+
 }
 
 .text--expanded .text__content {
 	/* show text when button read more  is clicked */
 	display: block;
+	margin-bottom: var(--font-leading-small);
 }
 
 
