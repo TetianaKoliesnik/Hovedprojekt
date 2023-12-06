@@ -58,7 +58,7 @@ aside {
 }
 
 .tips {
-	margin-top: 10px;
+	padding: var(--font-leading-small);
 	font-style: oblique;
 }
 
@@ -207,6 +207,13 @@ p {
 
 	.image-container {
 		order: 2;
+	}
+
+}
+
+@media screen and (min-width: 1600px){
+	body{
+		font-size: var(--font-size-medium);
 	}
 
 }
