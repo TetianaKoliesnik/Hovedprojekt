@@ -107,3 +107,19 @@ const changeSlide = (event) => {
 controls.forEach(button => {
 	button.addEventListener("click", changeSlide);
 })
+
+
+/* code below is for the pop up window */
+ const aboutButton = document.querySelector('.about-button');
+ const closeButton = document.querySelector('.close-button');
+ const aboutPopup = document.querySelector('.about-popup');
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    aboutButton.addEventListener('click', function() {
+        aboutPopup.style.display = 'block';
+    });
+
+    closeButton.addEventListener('click', function() {
+        aboutPopup.style.display = 'none';
+    });
+});
