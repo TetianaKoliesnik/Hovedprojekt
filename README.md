@@ -4,7 +4,7 @@ Outdoors Blog: Forest Footprints
 ## Overview
 The idea to create a blog website came from my friend who wanted to start blogging about his outdoor adventures, hiking experiences, and personal reflections. 
 Facebook wasn't suitable for multiple reasons, so he approached me for assistance. 
-I gladly accepted, as this type of web project offers a great opportunity to test the skills I gained in my first semester at Kristiania Høyskole. 
+I accepted, as this type of web project offers a great opportunity to test the skills I gained during my first semester at Kristiania Høyskole. 
 Once finished, it will be actively used by a real customer. The primary objective of this project is to test my skills in creating responsive and modern websites.
 
 
